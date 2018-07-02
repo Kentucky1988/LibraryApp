@@ -1,0 +1,11 @@
+﻿<div>
+    <h3>Create client</h3>
+
+    <client-form [(client)]="client"></client-form>
+
+    <div>
+        <input type="button" value="Save" (click)="save()" class="btn btn-success" />
+        <a routerLink="/clients" class="btn btn-warning">Close</a>
+    </div>
+</div>
+

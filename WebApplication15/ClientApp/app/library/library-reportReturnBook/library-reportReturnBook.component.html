@@ -1,0 +1,22 @@
+﻿<h3>Accounting for books in the librery</h3>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Book</td>
+                <td>Author</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{book.name}}</td>
+                <td>{{book.author}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <button class="btn btn-sm btn-success" (click)="downloadReport(books)">Download report</button>
+    <a routerLink="/library" class="btn btn-warning">Close</a>
+</div>

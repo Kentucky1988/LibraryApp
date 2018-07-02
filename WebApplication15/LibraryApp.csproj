@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app\app-routing.module.ts" />
+    <None Remove="ClientApp\app\app.component.ts" />
+    <None Remove="ClientApp\app\app.module.ts" />
+    <None Remove="ClientApp\app\books\book-form\book-form.component.ts" />
+    <None Remove="ClientApp\app\books\books-create\books-create.component.ts" />
+    <None Remove="ClientApp\app\books\books-edit\books-edit.component.ts" />
+    <None Remove="ClientApp\app\books\books-list\books-list.component.ts" />
+    <None Remove="ClientApp\app\books\books.module.ts" />
+    <None Remove="ClientApp\app\books\shared\book.model.ts" />
+    <None Remove="ClientApp\app\books\shared\books.service.ts" />
+    <None Remove="ClientApp\app\clients\clients-create\clients-create.component.ts" />
+    <None Remove="ClientApp\app\clients\clients-edit\clients-edit.component.ts" />
+    <None Remove="ClientApp\app\clients\clients-form\client-form.component.ts" />
+    <None Remove="ClientApp\app\clients\clients-list\clients-list.component.ts" />
+    <None Remove="ClientApp\app\clients\clients-routing.module.ts" />
+    <None Remove="ClientApp\app\clients\clients.module.ts" />
+    <None Remove="ClientApp\app\clients\shared\clients.model.ts" />
+    <None Remove="ClientApp\app\clients\shared\clients.service.ts" />
+    <None Remove="ClientApp\app\library\library-reportReturnBook\library-reportReturnBook.component.ts" />
+    <None Remove="ClientApp\app\library\library-reportTookAwayBook\library-reportTookAwayBook.component.ts" />
+    <None Remove="ClientApp\app\library\library-returnBook\library-returnBook.component.ts" />
+    <None Remove="ClientApp\app\library\library-routing.module.ts" />
+    <None Remove="ClientApp\app\library\library-tookAwayBook\library-tookAwayBook.component.ts" />
+    <None Remove="ClientApp\app\library\library.module.ts" />
+    <None Remove="ClientApp\app\library\library\library.component.ts" />
+    <None Remove="ClientApp\app\library\shared\library.model.ts" />
+    <None Remove="ClientApp\app\library\shared\library.service.ts" />
+    <None Remove="ClientApp\main.ts" />
+    <None Remove="ClientApp\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryApp.BLL\LibraryApp.BLL.csproj" />
+    <ProjectReference Include="..\LibraryApp.DAL\LibraryApp.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\books\books-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\app.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\books\book-form\book-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\books\books-edit\books-edit.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\books\books-create\books-create.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\books\books-list\books-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\books\books.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\books\shared\book.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\books\shared\books.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\clients\clients-create\clients-create.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\clients\clients-edit\clients-edit.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\clients\clients-form\client-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\clients\clients-list\clients-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\clients\clients-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\clients\clients.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\clients\shared\clients.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\clients\shared\clients.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\library-reportReturnBook\library-reportReturnBook.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\library-reportTookAwayBook\library-reportTookAwayBook.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\library-returnBook\library-returnBook.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\library-routing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\library-tookAwayBook\library-tookAwayBook.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\library.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\library\library.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\shared\library.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\library\shared\library.service.ts" />
+    <TypeScriptCompile Include="ClientApp\main.ts" />
+    <TypeScriptCompile Include="ClientApp\polyfills.ts" />
+  </ItemGroup>
+
+</Project>

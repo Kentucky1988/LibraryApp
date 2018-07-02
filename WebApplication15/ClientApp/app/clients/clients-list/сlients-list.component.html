@@ -1,0 +1,21 @@
+﻿<h3>List of clients</h3>
+<div>
+    <button class="btn btn-sm btn-success" (click)="createClient()">Add</button>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Client</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let client of clients">
+            <td>{{client.fullName}}</td>
+            <td>
+                <button class="btn btn-sm btn-primary" (click)="editClient(client)">Edit</button>
+                <button class="btn btn-sm btn-danger" (click)="deleteClient(client)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
